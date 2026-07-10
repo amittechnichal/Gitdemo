@@ -15,4 +15,4 @@ jobs:
 
     steps:
       - name: Greetings
-        run: echo "$((inputs.name))"
+        run: echo "${{ inputs.name }}"
