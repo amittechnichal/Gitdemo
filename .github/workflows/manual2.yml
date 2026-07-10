@@ -4,23 +4,22 @@ on:
   workflow_dispatch:
     inputs:
       name:
-       description: Name
-       type: string
-       default: test
+        description: Name
+        type: string
+        default: test
 
       age:
         description: Age
         type: number
         required: true
-      
 
 jobs:
   manual:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Greetings
+      - name: Print Name
         run: echo "${{ inputs.name }}"
 
-        - age: Age
+      - name: Print Age
         run: echo "${{ inputs.age }}"
