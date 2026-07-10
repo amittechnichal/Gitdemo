@@ -2,9 +2,15 @@ name: Manual2 workflow
 
 on:
   workflow_dispatch:
+    inputs:
+      name:
+       description: Name
+       type: string
+       default: test
+      
 
 jobs:
-  demo:
+  manual:
     runs-on: ubuntu-latest
 
     steps:
